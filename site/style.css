@@ -1,0 +1,181 @@
+.header {
+  height: 60px;
+  background: #330a0a;
+}
+.header p {
+  color: #fff0f0;
+  font-weight: 300;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.center-padding {
+  padding-left: 180px;
+  padding-right: 180px;
+}
+
+.hero {
+  height: 424px;
+  background: #471818;
+}
+
+.hero h1 {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 54px;
+
+  text-align: center;
+
+  color: #f83e3e;
+}
+
+.hero h2 {
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 37px;
+  text-align: center;
+
+  color: #fff0f0;
+}
+
+.hero-option {
+  margin: 20px;
+}
+
+.hero-button {
+  width: 151px;
+  height: 54px;
+  outline: none;
+  border: 0;
+  background: #f83e3e;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+
+  color: #420e0e;
+}
+
+.hero-link {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 27px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-decoration-line: underline;
+
+  color: #fff0f0;
+}
+
+.light-subtitle {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+.bold-subtitle {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.heavy {
+  font-weight: bold;
+}
+
+.light-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 25px;
+
+  /* or 156% */
+
+  letter-spacing: 0.05em;
+
+  color: #000000;
+}
+
+.graphical-row {
+  min-height: 450px;
+}
+
+.left-side-col {
+  min-width: 350px;
+}
+
+.code-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  /* or 139% */
+
+  letter-spacing: 0.05em;
+
+  color: #000000;
+}
+
+.code-rect {
+  width: 556px;
+  height: 358px;
+
+  background: #330a0a;
+  border-radius: 30px;
+  padding: 30px;
+}
+
+.code-text {
+  font-family: Overpass Mono;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 25px;
+  /* or 179% */
+
+  letter-spacing: 0.05em;
+
+  color: #fff0f0;
+  margin-bottom: 0;
+  max-width: 500px;
+  display: block;
+}
+
+.green {
+  color: #8bc876;
+}
+
+.shell-input {
+  background: #330a0a;
+  outline: none;
+  border: 0;
+  color: #fff0f0;
+  width: 450px;
+}
+
+#errorlogs {
+  max-width: 400px;
+  word-wrap: break-word;
+  color: #f83e3e;
+}
