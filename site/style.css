@@ -189,3 +189,14 @@ body {
 .footer-space {
   height: 100px;
 }
+.github-link {
+  color: #fff0f0;
+}
+.github-link:hover {
+  color: #fff0f0;
+}
+
+.button-link:hover {
+  color: #471818;
+  text-decoration: none;
+}

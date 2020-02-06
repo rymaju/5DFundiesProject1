@@ -19,7 +19,11 @@
       >
         <div class="col">
           <p>
-            Github
+            <a
+              class="github-link"
+              href="https://github.com/rymaju/5DFundiesProject1"
+              >Github</a
+            >
           </p>
         </div>
         <div class="col">
@@ -42,11 +46,15 @@
           </h2>
 
           <div class="d-flex justify-content-center align-items-center">
-            <div class="hero-option">
-              <button class="hero-button">Get started</button>
-            </div>
+            <a href="/#live-demo" class="button-link">
+              <div
+                class="hero-option hero-button d-flex align-items-center justify-content-center"
+              >
+                Get started
+              </div>
+            </a>
             <div class="hero-link hero-option">
-              <a>
+              <a href="/#code-explanation" class="github-link">
                 See the code
               </a>
             </div>
@@ -111,6 +119,7 @@
       </div>
 
       <div
+        id="live-demo"
         class="row no-gutters center-padding mt-5 graphical-row  align-items-center"
       >
         <div class="col pr-5 left-side-col ">
@@ -183,6 +192,7 @@
       </div>
 
       <div
+        id="code-explanation"
         class="row no-gutters center-padding mt-5 graphical-row  align-items-center"
       >
         <div class="col pr-5 left-side-col ">
@@ -193,10 +203,12 @@
           <p class="light-text">
             The shell script that implements that core behavior of Dread Driven
             Development is less than 10 lines long. We take in two arguments,
-            with program as the first and rootDir as the second. If the exit
-            code of running the program is 0, then it is successful. Therefore,
-            if the output is not 0, then we should destroy everything in the
-            root directory and scream.
+            the root directory and the program(optional). If the exit code of
+            running the program is 0, then it is successful. Therefore, if the
+            output is not 0, then we should destroy everything in the root
+            directory. The script is meant to be modified, such that you could
+            replace "sh program.sh" with any code that will run your program
+            directly (See the Github repo to learn more).
           </p>
         </div>
         <div class="col ">
@@ -204,17 +216,23 @@
           <div class="d-flex align-items-center code-rect">
             <p class="code-text">
               #!/bin/bash<br />
-              <br />
-              <span class="green">program</span>=<span class="green">$1</span
+
+              <span class="green">rootDir</span>=<span class="green">$1</span
               ><br />
-              <span class="green">rootDir</span>=<span class="green">$2</span
+              <span class="green">program</span>=<span class="green">$2</span
               ><br />
-              <br />
-              if ! sh <span class="green">$program</span><br />
+
+              sh <span class="green">$program</span>
+
+              <br /><br />
+
+              if [[ <span class="green">$?</span> -ne
+              <span class="green">0</span> ]]<br />
               then<br />
               &nbsp; rm -rf <span class="green">$rootDir</span><br />
-              &nbsp; while <span class="green">true</span>; do echo
-              <span class="green">no mistakes</span>;<br />
+              &nbsp; while <span class="green">true</span><br />
+              &nbsp; &nbsp; do echo <span class="green">no mistakes</span><br />
+              &nbsp;done<br />
               fi<br />
             </p>
           </div>
@@ -226,7 +244,11 @@
       >
         <div class="col">
           <p>
-            Github
+            <a
+              class="github-link"
+              href="https://github.com/rymaju/5DFundiesProject1"
+              >Github</a
+            >
           </p>
         </div>
         <div class="col">
