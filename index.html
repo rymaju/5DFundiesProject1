@@ -137,7 +137,7 @@
               $ type:
               <br />
               <span class="green"
-                >&nbsp; nomistakes.sh project/thiswebsite project/</span
+                >&nbsp; sh nomistakes.sh project/thiswebsite project/</span
               >
               <br />
               &nbsp; to enforce no mistakes <br /><span id="errorlogs"></span
@@ -193,7 +193,10 @@
           <p class="light-text">
             The shell script that implements that core behavior of Dread Driven
             Development is less than 10 lines long. We take in two arguments,
-            with program as the first and rootDir as the second. If the exit code of running the program is 
+            with program as the first and rootDir as the second. If the exit
+            code of running the program is 0, then it is successful. Therefore,
+            if the output is not 0, then we should destroy everything in the
+            root directory and scream.
           </p>
         </div>
         <div class="col ">
@@ -246,7 +249,7 @@
             if (count > 250) {
               crash()
             }
-            document.getElementById('errorlogs').innerHTML += 'ERROR'
+            document.getElementById('errorlogs').innerHTML += 'no mistakes '
             count++
           }, 5)
         }

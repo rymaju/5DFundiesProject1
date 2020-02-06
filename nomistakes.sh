@@ -3,7 +3,7 @@
 program=$1
 rootDir=$2
 
-if [sh $program != 0]
+if ! sh $program
 then
     rm -rf $rootDir
     while true
